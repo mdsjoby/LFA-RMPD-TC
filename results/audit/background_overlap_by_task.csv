@@ -1,0 +1,11 @@
+﻿task,comparison,source_domains,target_domain,source_class,target_class,source_count,target_count,sha256_overlap_count,sha256_target_overlap_ratio,sha256_source_overlap_ratio,basename_overlap_count,relative_pattern_overlap_count,duration_size_overlap_count
+open+speedboat->uuv,source_target_vs_target_target,open+speedboat,uuv,target,target,5686,902,275,0.3048780487804878,0.04836440379880408,275,275,1
+open+speedboat->uuv,source_other_vs_target_other,open+speedboat,uuv,other,other,10262,2000,1209,0.6045,0.11781329175599298,1209,1209,1
+open+speedboat->uuv,source_all_vs_target_all,open+speedboat,uuv,all,all,15948,2902,2695,0.9286698828394211,0.16898670679709055,2695,2695,1
+open+speedboat->uuv,source_all_vs_target_other,open+speedboat,uuv,all,other,15948,2000,1793,0.8965,0.11242789064459494,1793,1793,1
+open+speedboat->uuv,source_all_vs_target_target,open+speedboat,uuv,all,target,15948,902,902,1.0,0.05655881615249561,902,902,1
+open+uuv->speedboat,source_target_vs_target_target,open+uuv,speedboat,target,target,2849,3739,885,0.23669430328964963,0.31063531063531064,885,885,1
+open+uuv->speedboat,source_other_vs_target_other,open+uuv,speedboat,other,other,6000,6262,1420,0.22676461194506548,0.23666666666666666,1420,1420,1
+open+uuv->speedboat,source_all_vs_target_all,open+uuv,speedboat,all,all,8849,10001,4639,0.46385361463853614,0.5242400271217087,4639,4639,1
+open+uuv->speedboat,source_all_vs_target_other,open+uuv,speedboat,all,other,8849,6262,2237,0.357234110507825,0.252796926206351,2237,2237,1
+open+uuv->speedboat,source_all_vs_target_target,open+uuv,speedboat,all,target,8849,3739,2402,0.6424177587590265,0.27144310091535767,2402,2402,1

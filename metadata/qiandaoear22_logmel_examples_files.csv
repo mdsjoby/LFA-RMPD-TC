@@ -1,0 +1,7 @@
+﻿local_domain,official_category,class,duration_s,relative_path
+open,KaiYuan,other/background,3.0,open\raw\other\20220626171347_S_No7_M_M_2_label__0__30.wav
+open,KaiYuan,target,3.0,open\raw\target\20220628105725_M_KaiYuan_N_S&SpeedBoat_M_M&QianDao_M_M_2_label__1__18.wav
+speedboat,SpeedBoat,other/background,3.0,speedboat\raw\other\20220626100727_M_QianDao_F_W&QianDao_F_W&QianDao_F_W_1_label__1__21.wav
+speedboat,SpeedBoat,target,3.0,speedboat\raw\target\20220626105235_M_SpeedBoat_M_M&SpeedBoat_M_M&SpeedBoat_M_M_0_label__1__52.wav
+uuv,UUV,other/background,3.0,uuv\raw\other\20220626164843_M_KaiYuan_M_M&QianDao_F_W_1_label__1__5.wav
+uuv,UUV,target,3.0,uuv\raw\target\20220625095309_M_FishBoat_M_M&UUV_M_W&ArtificialSignals_0_label__1__38.wav

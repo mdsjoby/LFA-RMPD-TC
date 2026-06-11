@@ -1,0 +1,4 @@
+﻿domain,target_count,other_count,total_count,total_duration_sec,total_duration_hours,shorter_than_model_input_count,approx_3s_count,longer_than_model_input_count,unique_sha256_count,unique_basename_count,duration_sec_min,duration_sec_max,duration_sec_mean,duration_sec_median
+open,1947,4000,5947,17841.0,4.9558333333333335,5947,5947,0,5935,5947,3.0,3.0,3.0,3.0
+speedboat,3739,6262,10001,30003.0,8.334166666666667,10001,10001,0,7411,10001,3.0,3.0,3.0,3.0
+uuv,902,2000,2902,8706.0,2.4183333333333334,2902,2902,0,2902,2902,3.0,3.0,3.0,3.0

@@ -1,0 +1,21 @@
+Cross-domain data_targets overlap audit
+===========================================
+
+Total manifest records: 18850
+Unique SHA256 hashes: 10060
+Cross-domain identical SHA256 pairs: 8993
+Cross-domain same-basename pairs: 7140
+
+Identical SHA256 overlap is present: other/background-only pairs=3781, pairs involving at least one target record=5212.
+Some identical overlap involves target-labelled records; inspect duplicate_hash_pairs.csv before reporting results.
+
+Task-level overlap:
+- open+speedboat->uuv | source_target_vs_target_target: hash=275/902 target-side (30.488%), basename=275, pattern=275
+- open+speedboat->uuv | source_other_vs_target_other: hash=1209/2000 target-side (60.450%), basename=1209, pattern=1209
+- open+speedboat->uuv | source_all_vs_target_all: hash=2695/2902 target-side (92.867%), basename=2695, pattern=2695
+- open+uuv->speedboat | source_target_vs_target_target: hash=885/3739 target-side (23.669%), basename=885, pattern=885
+- open+uuv->speedboat | source_other_vs_target_other: hash=1420/6262 target-side (22.676%), basename=1420, pattern=1420
+- open+uuv->speedboat | source_all_vs_target_all: hash=4639/10001 target-side (46.385%), basename=4639, pattern=4639
+
+Recommended manuscript wording:
+A SHA256-based audit found that the public domain folders share some identical background/other WAV records across domains; therefore the main protocol is reported as an episode-level cross-target evaluation rather than a strict deployment-level recording-independent split. A hash-disjoint robustness check removes target-domain records whose hashes appear in the source domains.

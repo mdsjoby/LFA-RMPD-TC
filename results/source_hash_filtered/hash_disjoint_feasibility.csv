@@ -1,0 +1,9 @@
+﻿task,k_shot,drop_side_requested,drop_side_used,feasible,target_available_after_hash_class0,target_available_after_hash_class1,target_excluded_hash_overlap_class0,target_excluded_hash_overlap_class1,source_initial_count,source_after_hash_count
+open+speedboat->uuv,5,source,source,True,2000,902,0,0,15948,11537
+open+speedboat->uuv,10,source,source,True,2000,902,0,0,15948,11537
+open+speedboat->uuv,20,source,source,True,2000,902,0,0,15948,11537
+open+speedboat->uuv,50,source,source,True,2000,902,0,0,15948,11537
+open+uuv->speedboat,5,source,source,True,6262,3739,0,0,8849,3258
+open+uuv->speedboat,10,source,source,True,6262,3739,0,0,8849,3258
+open+uuv->speedboat,20,source,source,True,6262,3739,0,0,8849,3258
+open+uuv->speedboat,50,source,source,True,6262,3739,0,0,8849,3258

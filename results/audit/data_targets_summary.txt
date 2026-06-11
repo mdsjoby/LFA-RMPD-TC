@@ -1,0 +1,23 @@
+QiandaoEar22 local data_targets audit
+============================================
+
+The reported counts refer to local preprocessed WAV records, not derived model segments.
+The model maps each local WAV record to a fixed 4.0-s input by cropping or zero padding.
+All detected local QiandaoEar22 records are approximately 3 s; therefore they are zero padded for the fixed model input.
+
+Total records: 18850
+Target records: 6588
+Other/background records: 12262
+Total local WAV duration: 15.708 h
+
+By domain:
+- open: target=1947, other=4000, total=5947, duration mean=3.000s, min=3.000s, max=3.000s, shorter-than-input=5947
+- speedboat: target=3739, other=6262, total=10001, duration mean=3.000s, min=3.000s, max=3.000s, shorter-than-input=10001
+- uuv: target=902, other=2000, total=2902, duration mean=3.000s, min=3.000s, max=3.000s, shorter-than-input=2902
+
+Class counts by domain:
+class_label  other  target
+domain                    
+open          4000    1947
+speedboat     6262    3739
+uuv           2000     902

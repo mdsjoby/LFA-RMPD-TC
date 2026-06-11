@@ -1,0 +1,28 @@
+Hash-disjoint robustness summary
+==================================
+
+Hash filtering strategy and retained records:
+- open+speedboat->uuv: drop_side=source; source records 15948->11537; target available other=2000, target=902; target excluded other=0, target=0
+- open+uuv->speedboat: drop_side=source; source records 8849->3258; target available other=6262, target=3739; target excluded other=0, target=0
+
+Overall method means:
+         method      auc  pd_at_pfa_0.05  pd_at_pfa_0.01       f1
+  CE-LinearHead 0.689353        0.255917        0.137750 0.636525
+       CE-Proto 0.592470        0.121042        0.050675 0.557930
+  CosMetricHead 0.688067        0.229858        0.103642 0.627250
+RegMahaProxy-TC 0.711136        0.270950        0.136500 0.643829
+
+Paired RegMahaProxy-TC deltas:
+     baseline    final_method         metric  n_pairs  mean_delta  median_delta  ci95_low  ci95_high  positive_ratio   wilcoxon_p       holm_p
+     CE-Proto RegMahaProxy-TC            auc      240    0.118666      0.115307  0.107185   0.130462        0.879167 8.928161e-36 1.071379e-34
+     CE-Proto RegMahaProxy-TC pd_at_pfa_0.05      240    0.149908      0.110000  0.130265   0.170267        0.870833 2.933527e-31 3.226880e-30
+     CE-Proto RegMahaProxy-TC pd_at_pfa_0.01      240    0.085825      0.040000  0.070023   0.101976        0.804167 1.001735e-23 1.001735e-22
+     CE-Proto RegMahaProxy-TC             f1      240    0.085899      0.093730  0.072340   0.099235        0.791667 3.688887e-23 3.319998e-22
+CosMetricHead RegMahaProxy-TC            auc      240    0.023069      0.024644  0.018326   0.027877        0.762500 3.278209e-18 2.622567e-17
+CosMetricHead RegMahaProxy-TC pd_at_pfa_0.05      240    0.041092      0.039000  0.028958   0.052825        0.700000 4.158232e-13 2.494939e-12
+CosMetricHead RegMahaProxy-TC pd_at_pfa_0.01      240    0.032858      0.016000  0.021666   0.044500        0.654167 3.475920e-09 1.737960e-08
+CosMetricHead RegMahaProxy-TC             f1      240    0.016579      0.022825  0.006656   0.026668        0.654167 1.484594e-05 4.453783e-05
+CE-LinearHead RegMahaProxy-TC            auc      240    0.021782      0.018724  0.016792   0.026897        0.725000 7.118560e-15 4.982992e-14
+CE-LinearHead RegMahaProxy-TC pd_at_pfa_0.05      240    0.015033      0.016000  0.006066   0.023500        0.633333 4.736509e-06 1.894603e-05
+CE-LinearHead RegMahaProxy-TC pd_at_pfa_0.01      240   -0.001250      0.002000 -0.009658   0.007109        0.512500 4.936454e-01 4.936454e-01
+CE-LinearHead RegMahaProxy-TC             f1      240    0.007303      0.018815 -0.002372   0.016531        0.654167 1.818103e-04 3.636206e-04
